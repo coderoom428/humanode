@@ -1,0 +1,70 @@
+.papers-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../assets/desktop/img/background/common-back.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 180px;
+    .papers-block {
+      margin-top: 50px;
+      text-transform: uppercase;
+      margin-left: 40px;
+      margin-right: 40px;
+      .block-title {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 40px;
+        background: -webkit-linear-gradient(#C62A1F, #DA663E, #EA9757, #F8C16C);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .block-item {
+        margin-bottom: 30px;
+        color: white;
+      }
+    }
+    .btn-back {
+      position: absolute;
+      left: 110px;
+      display: flex;
+      top: 48%;
+      color: white;
+    }
+  }
+  
+  @media (max-width: 1240px) {
+    .papers-content {
+      background-image: url("../../assets/desktop/svg/network/bg-mobile.svg");
+      background-size: 100% !important;
+      background-color: #262626 !important;
+      background-position: left !important;
+      transition: all 0.5s ease;
+      overflow-y: hidden;
+      overflow-x: hidden;
+      .papers-block {
+        max-width: 150px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        .block-title {
+          font-size: 16px;
+          margin-bottom: 10px;
+          letter-spacing: 0.3em !important;
+        }
+        .block-item {
+          font-size: 16px;
+          margin-bottom: 10px;
+          letter-spacing: 0.3em !important;
+          &.email {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+  }
+  

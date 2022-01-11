@@ -1,0 +1,106 @@
+.seemore-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/desktop/svg/background/path-back.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 220px;
+  .gradient-text {
+    position: fixed;
+    width: 200px;
+    height: 421px;
+    font-size: 13px;
+    left: 34%;
+    top: 20% !important;
+    display: none;
+    background: -webkit-linear-gradient(
+      rgb(255, 255, 255),
+      rgba(51, 51, 51, 0)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: left;
+    overflow: scroll;
+  }
+  .seemore-cross {
+    position: absolute;
+    width: auto;
+    display: none !important;
+    font-weight: 100;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 30px;
+    left: calc(50% - 180px / 2);
+  }
+
+  .indiv-text {
+    font-size: 13px !important;
+    margin-top: 20px !important;
+    line-height: 20px !important;
+    letter-spacing: 20% !important;
+    letter-spacing: 1px !important;
+    word-wrap: normal;
+    text-align: left;
+  }
+  .dot-text {
+    letter-spacing: 1px !important;
+    width: fit-content;
+    text-align: center;
+    max-width: 496px;
+    min-height: 60px;
+  }
+
+  .gradient-text::-webkit-scrollbar {
+    display: none;
+  }
+  .graph-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .btn-back {
+    position: absolute;
+    left: 110px;
+    display: flex;
+    top: 48%;
+    color: white;
+  }
+}
+
+@media (max-width: 768px) {
+  .seemore-content {
+    background-image: url("../../assets/desktop/svg/network/bg-mobile.svg");
+    background-size: 100% !important;
+    background-color: #262626 !important;
+    background-position: left !important;
+    transition: all 0.5s ease;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    padding-top: 130px;
+    .chart-dot {
+      display: none;
+    }
+  
+    .responsive-text {
+      display: block;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+    }
+    .dot-text {
+      display: none !important;
+    }
+  
+    .gradient-text {
+      display: block;
+    }
+  
+    .seemore-cross {
+      display: block !important;
+      letter-spacing: 6px !important;
+    }
+  }
+
+}
